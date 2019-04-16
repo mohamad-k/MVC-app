@@ -1,0 +1,50 @@
+<form action="/user/reg" method="post">
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputCity">Name</label>
+            <input type="text" name="username" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-2">
+            <label for="inputZip">age</label>
+            <input type="text" name="age" class="form-control" id="inputZip">
+        </div>
+
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" name="password" class="form-control" id="inputPassword4" placeholder="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputAddress">Country</label>
+        <input type="text" name="country" class="form-control" id="inputAddress" placeholder="">
+    </div>
+
+
+
+    <div class="form-group">
+
+    </div>
+    <button type="submit" class="btn btn-primary ">Sign Up</button>
+</form>
+
+<div class=" mx-auto border p-3 bg-warning" style="width: 500px;">
+
+
+    <h2 class="text-center border-bottom">User Infos</h2>
+    <p><b>Name</b> : {{userData.username}}</p>
+    <p><b>Age</b> : {{userData.age}}</p>
+    <p><b>Email address</b> : {{userData.email}}</p>
+    <p><b>Password</b> : *************</p>
+    <p><b>Country </b>: {{userData.country}}</p>
+
+
+
+
+</div>

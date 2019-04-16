@@ -1,0 +1,27 @@
+<table class="table table-striped table-dark table-hover container">
+    <tr>
+        <td style="color:rgb(99, 6, 18);font-weight:bolder;">Id</td>
+        <td style="color:rgb(89, 67, 212);font-weight:bolder;">Name</td>
+        <td style="color:rgb(89, 67, 212);font-weight:bolder;">Age</td>
+        <td style="color:rgb(89, 67, 212);font-weight:bolder;">Country</td>
+        <td style="color:rgb(89, 67, 212);font-weight:bolder;">Email address</td>
+        <td style="color:rgb(89, 67, 212);font-weight:bolder;">Created at</td>
+
+
+    </tr>
+    {{#each users}}<tr>
+        <td>{{_id}} </td>
+        <td><a style="color:white" href="/user/detail/{{_id}}"> {{username}} </a></td>
+        <td> {{age}}</td>
+        <td>{{country}}</td>
+        <td>{{email}}</td>
+        <td>{{created_at}}</td>
+        <td><a href="/user/delete/{{_id}}"> Delete </a></td>
+        <td><a href="/user/update/{{_id}}">update</a></td>
+
+    </tr>
+
+    {{/each}}
+
+
+</table>

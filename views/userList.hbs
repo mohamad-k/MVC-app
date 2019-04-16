@@ -1,0 +1,19 @@
+<table class="table table-striped table-dark table-hover container">
+    <tr>
+        <td style="color:rgb(99, 6, 62);font-weight:bolder;">Id</td>
+        <td style="color:rgb(89, 67, 212);font-weight:bolder;">Name</td>
+        <td style="color:rgb(89, 67, 212);font-weight:bolder;">Phone Number</td>
+        <td style="color:rgb(89, 67, 212);font-weight:bolder;">City</td>
+
+
+    </tr>
+    {{#each users}}<tr>
+        <td>{{id}}</td>
+        <td> {{name}} </td>
+        <td> {{phone}}</td>
+        <td>{{address.city}}</td>
+    </tr>
+    {{/each}}
+
+
+</table>
